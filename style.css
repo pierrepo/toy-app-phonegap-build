@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+	background-color: #ffffff;
+	font-size: 110%;
+	font-family: Arial, sans-serif;
+	line-height: 20px;
+	text-align: left;
+	overflow:auto;
+	margin: 0 auto;
+	width:50%;
+	border: 1px solid #656565;
+    min-height: 100%;
+    position: relative;
+}
+
+header, footer{
+	background-color: #999999;
+}
+
+h1{
+	color: #FFFFFF;
+	padding-top: 20px;
+    padding-bottom: 25px;
+	padding-left: 50px;
+    margin: 0px;
+    font-size: 1.5em;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover, a:active{
+	background-color:#CF5C3F;
+	color:#ffffff;
+}
+section {
+    clear: both;
+    padding: 0px 10px 50px 10px;
+}
+
+.img{
+	text-align: center;
+	width: 100%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    padding-right: 10px;
+	text-align: right;
+	color: #FFFFFF;
+    font-style: italic;
+    background-color: #999999;
+}
+
+
+/*****************************************************************************
+ * for mobile app
+*******************************************************************************/
+@media only screen and (max-width:800px){
+
+	body{
+		width: 100%;
+	}
+
+    h1{
+        color: #FFFFFF;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+
+}
+
+/*****************************************************************************
+ * for printing
+*******************************************************************************/
+@media only print {
+
+    html{
+        height: 85%
+    }
+
+	body{
+		width: 100%;
+        border: 0px;
+	}
+    
+h1{
+	color: #FFFFFF;
+	padding: 10px 0px 0px 30px;
+    margin: 0px;
+    font-size: 1em;
+}
+
+    nav{
+        display: none;
+    }
+    
+    button{
+        display: none;
+    }
+}
+

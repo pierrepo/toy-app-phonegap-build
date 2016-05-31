@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.fcrm.densipara"
+        versionCode = "1" 
+        version     = "0.1" >
+    <!-- versionCode is optional and Android only. It must be an integer -->
+    
+
+    <name>ToyAppPGB</name>
+
+    <description>
+        Toy Application for PhoneGap Build
+    </description>
+
+    <author href="http://cupnet.net" email="pierre.poulain@cupnet.net">
+        Pierre Poulain 
+    </author>
+
+    <!-- build only for android -->
+    <platform name="android" />
+
+    <!-- icon -->
+    <icon src="icon.png" />
+
+
+    <!-- no permission required -->
+    <preference name="permissions" value="none" />
+
+    <preference name="fullscreen" value="false" />
+
+
+    <!-- geolocation plugin 
+    https://build.phonegap.com/plugins/5538
+    -->
+    <plugin name="cordova-plugin-geolocation" source="pgb" />
+
+    <!-- access to external links -->
+    <preference name="stay-in-webview" value="false"/>
+    <access origin="*" browserOnly="true"/>
+
+</widget>
+
